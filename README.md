@@ -6,16 +6,19 @@ Web-based URL shortener
 1.) Unzip the url-shortener.zip file.
 
 2.) Run the following commands:
-    
     (a) With Docker (PRE-REQUISITES: Docker Desktop should be installed and running)
-        - cd url-shortener/
-        - docker compose up -d --build
-        - docker compose exec web python manage.py migrate
+    ```
+    cd url-shortener/
+    docker compose up -d --build
+    docker compose exec web python manage.py migrate
+    ```
     
     (b) Without Docker
-        - cd url-shortener/src/urlshortener
-        - python manage.py migrate
-        - python manage.py runserver
+    ```
+    cd url-shortener/src/urlshortener
+    python manage.py migrate
+    python manage.py runserver
+    ```
 
 3.) Open localhost:8000 in a web browser. 
 
@@ -25,4 +28,6 @@ Web-based URL shortener
 **RUNNING THE TESTS**
 
 To run the unit tests, navigate to the directory containing the manage.py file and run the following commands:
-    - python manage.py test
+```
+python manage.py test
+```
